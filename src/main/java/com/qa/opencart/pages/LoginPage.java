@@ -28,12 +28,12 @@ public class LoginPage {
 	private By loginErrorMesg = By.xpath("//div[@class='alert alert-danger alert-dismissible']");
 	
 	//4. Page Actions
-	@Step("getting login page title...")
+	@Step("getting login page title value...")
 	public String getLoginPageTitle() {
 		return eleUtil.doGetTitleWithFraction(Constants.LOGIN_PAGE_TITLE, Constants.DEFAULT_TIME_OUT);
 	}
 	
-	@Step("getting login page URL...")
+	@Step("getting login page URL value...")
 	public boolean getLoginPageUrl() {
 		return eleUtil.waitForURLToContain(Constants.LOGIN_PAGE_URL_FRACTION, Constants.DEFAULT_TIME_OUT);
 	}
