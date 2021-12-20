@@ -29,7 +29,7 @@ pipeline
         stage('Regression Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Sept2021POM.git'
+                    git 'https://github.com/jayarajanbabu/HybridFrameWorkPOMPattern'
                     sh "mvn clean install"
                 }
             }
