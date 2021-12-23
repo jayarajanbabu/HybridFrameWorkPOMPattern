@@ -17,6 +17,12 @@ public class OptionsManager {
 	
 	public ChromeOptions getChromeOptions() {
 		co = new ChromeOptions();
+		
+//		if (Boolean.parseBoolean("remote")) {
+//			co.setPlatformName("Linux");
+//			co.setBrowserVersion("94");
+//		}
+		
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) co.addArguments("--headless");
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) co.addArguments("--incognito");
 		return co;
