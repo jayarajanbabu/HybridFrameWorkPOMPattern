@@ -20,7 +20,7 @@ public class RegistrationPageTest extends BaseTest{
 	
 	public String getRandomEmail() {
 		Random randomGenerator = new Random();
-		String email = "seleautomation"+randomGenerator.nextInt(1000)+"@gmail.com";
+		String email = "seleautomation"+randomGenerator.nextInt(10000)+"@gmail.com";
 		return email;
 	}
 	@DataProvider
